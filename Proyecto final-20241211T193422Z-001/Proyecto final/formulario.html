@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guayitos-Pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo-Guayitos">
+    <h2>Pedido</h2>
+</div>
+<div class="subtitulo">
+    <h4>Haz un pedido fácil y rápido en nuestra página</h4>
+</div>
+    <div class="contenedor-pedido">
+        <form action="index.html" method="get">
+            <div>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+        </div>
+        <div>
+            <label for="personas">Guayos:</label>
+            <select name="personas" id="personas" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="fecha">
+        </div>
+        <p>Municipio para envíos al valle de aburrá: <select name="txtid" id="txtid">
+            <option value="Bb">Barbosa</option>
+            <option value="Gt">Girardota</option>
+            <option value="Cp">Copacabana</option>
+            <option value="Bl">Bello</option>
+            <option value="Ev">Envigado</option>
+            <option value="It">ItagÜí</option>
+            <option value="Sb">Sabaneta</option>
+            <option value="Le">La Estrella</option>
+            <option value="Cl">Caldas</option>
+        </select></p>
+        <p>Email: <input type="email" name="txtEmail" required placeholder="Ingrese su correo"></p> 
+        <p>¿Deseas recibir correos de nuestras promociones?<input type="radio" name="mos" value="S"required>Sí
+        <input type="radio"  name="mos" value="N"required>No </p> 
+        <div>
+            <label for="Comentarios">Comentarios Adicionales:</label>
+            <textarea name="Comentarios" id="Comentarios" rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">Reservar</button>
+            <button type="reset">Cancelar</button>
+        </div>
+        </form>
+
+    </div>
+</body>
+</html>
